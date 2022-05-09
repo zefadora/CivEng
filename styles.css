@@ -1,0 +1,78 @@
+/*BACKGROUND*/
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth;
+}
+html, body {
+  margin:0px;
+  padding:0px;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #4f772d, #90a955);
+  background-size: 400% 400%;
+  animation: gradient 5s ease-out .2s 1 both;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-attachment: fixed;
+}
+@keyframes gradient {
+  0% {
+  	background-position: 0% 50%;
+	}
+  100% {
+    background-position: 50% 100%;
+  }
+}
+html::-webkit-scrollbar {
+  display:none;
+}
+a {
+  color:inherit;
+  text-decoration: none;
+  cursor: crosshair;
+}
+
+/*TEXT*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size:10vw;
+  text-align:center;
+}
+
+header th {
+  font-family: 'Bebas Neue', cursive;
+  font-size:5vw;
+  text-align:center;
+  margin: 10px;
+  background-color:black;
+  color:white;
+  width:100vw;
+}
+header td {
+  font-family: 'Bebas Neue', cursive;
+  font-size:2.5vw;
+  text-align:center;
+  background-color:black;
+  color:white;
+  width:100vw;
+}
+
+.main {
+  font-family: 'Bebas Neue', cursive;
+  font-size:5vw;
+  text-align:center;
+  margin:none;
+  background-color:black;
+  color:white;
+  width:100vw;
+  height:25vh;
+}
